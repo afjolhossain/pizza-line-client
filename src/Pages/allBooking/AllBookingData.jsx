@@ -10,7 +10,7 @@ const AllBookingData = () => {
   const [Bookings, setBookings] = useState([]);
   const axiosSecure = useAxioasSecure();
   useEffect(() => {
-    // fetch(`http://localhost:5000/booking?email=${user?.email}`)
+    // fetch(`https://pizza-line-server.vercel.app/booking?email=${user?.email}`)
     //   .then((res) => res.json())
     //   .then((data) => setBookings(data));
 
@@ -30,7 +30,7 @@ const AllBookingData = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/booking/${_id}`, {
+        fetch(`https://pizza-line-server.vercel.app/booking/${_id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

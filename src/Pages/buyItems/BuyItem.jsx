@@ -27,7 +27,7 @@ const BuyItem = () => {
       user_email,
     };
 
-    fetch("http://localhost:5000/user", {
+    fetch("https://pizza-line-server.vercel.app/user", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(product),

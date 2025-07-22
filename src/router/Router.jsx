@@ -58,13 +58,13 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/products/${params.id}`),
+          fetch(`https://pizza-line-server.vercel.app/products/${params.id}`),
       },
       {
         path: "singleproduct/:id",
         element: <SingleProduct />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/products/${params.id}`),
+          fetch(`https://pizza-line-server.vercel.app/products/${params.id}`),
       },
 
       {
@@ -79,7 +79,7 @@ const router = createBrowserRouter([
         path: "/update/:id",
         element: <EditMyOrder />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/user/${params.id}`),
+          fetch(`https://pizza-line-server.vercel.app/user/${params.id}`),
       },
 
       {

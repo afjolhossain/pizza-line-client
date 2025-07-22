@@ -27,7 +27,7 @@ const DateBooking = () => {
 
     const bookingDateAndPerson = { date, person, user_email, user_Name };
 
-    fetch("http://localhost:5000/booking", {
+    fetch("https://pizza-line-server.vercel.app/booking", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(bookingDateAndPerson),

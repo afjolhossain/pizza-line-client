@@ -13,12 +13,12 @@ const MyOrder = () => {
   const axiosSecure = useAxioasSecure();
 
   useEffect(() => {
-    // fetch(`http://localhost:5000/user?email=${user?.email}`)
+    // fetch(`https://pizza-line-server.vercel.app/user?email=${user?.email}`)
     //   .then((res) => res.json())
     //   .then((data) => setOrders(data));
 
     // axios
-    //   .get(`http://localhost:5000/user?email=${user?.email}`, {
+    //   .get(`https://pizza-line-server.vercel.app/user?email=${user?.email}`, {
     //     withCredentials: true,
     //   })
     //   .then((res) => setOrders(res.data));
@@ -39,7 +39,7 @@ const MyOrder = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/user/${_id}`, {
+        fetch(`https://pizza-line-server.vercel.app/user/${_id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

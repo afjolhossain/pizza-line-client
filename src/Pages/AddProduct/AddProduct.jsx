@@ -14,7 +14,7 @@ const AddProduct = () => {
     const catagory = form.catagory.value;
     const product = { name, imageUrl, discription, price, catagory };
 
-    fetch("http://localhost:5000/products", {
+    fetch("https://pizza-line-server.vercel.app/products", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(product),
