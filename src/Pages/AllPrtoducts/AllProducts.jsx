@@ -3,15 +3,19 @@ import image1 from "../../../src/assets/images/splash-header-2.jpg";
 import { useEffect, useState } from "react";
 import AllProduct from "../AllProduct/AllProduct";
 import useAuth from "../../hooks/useAuth";
+import useAxioasSecure from "../../hooks/useAxioasSecure";
 
 const AllProducts = () => {
   const [products, setProducts] = useState([]);
   const { loading } = useAuth();
 
+  const axiosSecure = useAxioasSecure();
   useEffect(() => {
-    fetch("https://pizza-line-server.vercel.app/products")
-      .then((res) => res.json())
-      .then((data) => setProducts(data));
+    // fetch("https://pizza-line-server.vercel.app/products")
+    //   .then((res) => res.json())
+    //   .then((data) => setProducts(data));
+
+    axiosSecure.get("/products").then((res) => setProducts(res.data));
   }, []);
   return (
     <div>

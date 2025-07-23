@@ -1,15 +1,18 @@
 import { useEffect, useState } from "react";
 import Product from "../../Product/Product";
 import useAuth from "../../../hooks/useAuth";
+import useAxioasSecure from "../../../hooks/useAxioasSecure";
 
 const Products = () => {
   const { loading } = useAuth();
   const [products, setProducts] = useState([]);
-
+  const axiosSecure = useAxioasSecure();
   useEffect(() => {
-    fetch("https://pizza-line-server.vercel.app/products")
-      .then((res) => res.json())
-      .then((data) => setProducts(data));
+    // fetch("https://pizza-line-server.vercel.app/products")
+    //   .then((res) => res.json())
+    //   .then((data) => setProducts(data));
+
+    axiosSecure.get("/products").then((res) => setProducts(res.data));
   }, []);
   return (
     <div className="text-black text-center  py-6">

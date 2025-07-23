@@ -57,7 +57,7 @@ const Banner = () => {
         </SwiperSlide>
         <SwiperSlide className=" ">
           <div
-            className="hero min-h-screen"
+            className="hero  min-h-screen"
             style={{
               backgroundImage: `url(${image2})`,
             }}

@@ -16,12 +16,18 @@ const Review = () => {
     <div className="py-10 md:flex gap-4 mx-auto ">
       <div>
         <div
-          className=" min-h-96 mt-5 "
+          className=" min-h-96  "
           style={{
             opacity: "20px",
             backgroundBlendMode: "multiply",
             backgroundColor: "rgba(0, 0, 0, 0.6)",
             backgroundImage: `url(${image1})`,
+
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+
+            width: "100%",
           }}
         >
           <div className="hero-overlay"></div>
