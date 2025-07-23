@@ -29,9 +29,9 @@ const Banner = () => {
           clickable: true,
         }}
         modules={[EffectFade, Navigation, Pagination, Autoplay]}
-        className="mySwiper relative"
+        className="mySwiper relative "
       >
-        <SwiperSlide className=" ">
+        <SwiperSlide>
           <div
             className="hero min-h-screen"
             style={{

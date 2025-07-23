@@ -17,11 +17,11 @@ const SpecialItems = () => {
     });
   }, []);
   return (
-    <div>
+    <div className="py-6">
       <h1 className="text-5xl text-center font-Cormorant mt-10  text-gray-600">
         SPECIALITIES
       </h1>
-      <div className="grid md:grid-cols-2">
+      <div className="grid md:grid-cols-2 sm:grid-cols-1">
         <div data-aos="fade-up-right" data-aos-delay="200">
           <div className="flex flex-col max-w-3xl px-6 space-y-4 sm:p-10 dark:bg-gray-50 dark:text-gray-800">
             <ul className="flex flex-col divide-y dark:divide-gray-300">
