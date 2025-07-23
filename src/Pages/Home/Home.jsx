@@ -7,7 +7,7 @@ import Review from "./Review/Review";
 
 const Home = () => {
   return (
-    <div>
+    <div className="max-w-7xl">
       <Banner />
       <DateBooking />
       <Products />

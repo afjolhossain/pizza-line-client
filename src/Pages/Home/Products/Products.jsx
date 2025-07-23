@@ -30,7 +30,7 @@ const Products = () => {
       </div>
 
       {!loading ? (
-        <div className="grid md:grid-cols-4 gap-4 p-4">
+        <div className="grid md:grid-cols-4 mx-auto gap-4 p-4">
           {products.slice(0, 8).map((product) => (
             <Product product={product} key={product._id}></Product>
           ))}

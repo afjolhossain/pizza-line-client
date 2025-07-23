@@ -33,9 +33,12 @@ const Banner = () => {
       >
         <SwiperSlide>
           <div
-            className="hero min-h-screen"
+            className="hero  h-[70vh] md:h-screen"
             style={{
               backgroundImage: `url(${image1})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
             }}
           >
             <div className="hero-overlay opacity-44"></div>
