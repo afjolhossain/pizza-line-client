@@ -79,7 +79,7 @@ const Navbar = () => {
                 Admin
               </p>
             </summary>
-            <ul className="p-2 bg-black w-36 uppercase">
+            <ul className="p-2 bg-white w-36 uppercase">
               <li>
                 <NavLink to="addProduct">Add-Product</NavLink>
               </li>
@@ -90,14 +90,14 @@ const Navbar = () => {
 
       {/* User Route */}
       {user?.email && (
-        <li>
+        <li >
           <details>
             <summary>
               <p className="text-white text-1xl font-Cormorant font-medium uppercase">
                 User
               </p>
             </summary>
-            <ul className="p-2 bg-black  uppercase">
+            <ul className="p-2 bg-white md:w-36  uppercase">
               <li>
                 <NavLink to="myorder">My-order</NavLink>
               </li>

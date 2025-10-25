@@ -13,16 +13,6 @@ const MyOrder = () => {
   const axiosSecure = useAxioasSecure();
 
   useEffect(() => {
-    // fetch(`https://pizza-line-server.vercel.app/user?email=${user?.email}`)
-    //   .then((res) => res.json())
-    //   .then((data) => setOrders(data));
-
-    // axios
-    //   .get(`https://pizza-line-server.vercel.app/user?email=${user?.email}`, {
-    //     withCredentials: true,
-    //   })
-    //   .then((res) => setOrders(res.data));
-
     axiosSecure
       .get(`/user?email=${user?.email}`)
       .then((res) => setOrders(res.data));
@@ -47,7 +37,7 @@ const MyOrder = () => {
             if (data.deletedCount) {
               Swal.fire({
                 title: "Deleted!",
-                text: "Your file has been deleted.",
+                text: "Your Order has been deleted.",
                 icon: "success",
               });
             }

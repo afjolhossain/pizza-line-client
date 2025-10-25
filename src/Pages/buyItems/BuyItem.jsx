@@ -12,7 +12,6 @@ const BuyItem = () => {
     e.preventDefault();
     const form = e.target;
     const userName = form.userName.value;
-    // const email = form.email.value;
     const productName = form.productName.value;
     const price = form.price.value;
     const catagory = form.catagory.value;
@@ -38,7 +37,7 @@ const BuyItem = () => {
           Swal.fire({
             position: "top-center",
             icon: "success",
-            title: "Your product has been saved",
+            title: "Your Order has been saved",
             showConfirmButton: false,
             timer: 1500,
           });

@@ -25,7 +25,7 @@ const SingleProduct = () => {
           Swal.fire({
             position: "center",
             icon: "success",
-            title: "Your product has been saved",
+            title: "Your Food has been saved",
             showConfirmButton: false,
             timer: 1500,
           });

@@ -38,7 +38,7 @@ const AllBookingData = () => {
             if (data.deletedCount) {
               Swal.fire({
                 title: "Deleted!",
-                text: "Your file has been deleted.",
+                text: "Your Order has been deleted.",
                 icon: "success",
               });
             }

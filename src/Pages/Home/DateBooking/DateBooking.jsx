@@ -38,7 +38,7 @@ const DateBooking = () => {
           Swal.fire({
             position: "center",
             icon: "success",
-            title: "Your product has been saved",
+            title: "Your Booking has been saved",
             showConfirmButton: false,
             timer: 1500,
           });

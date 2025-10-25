@@ -11,10 +11,6 @@ const AllProducts = () => {
 
   const axiosSecure = useAxioasSecure();
   useEffect(() => {
-    // fetch("https://pizza-line-server.vercel.app/products")
-    //   .then((res) => res.json())
-    //   .then((data) => setProducts(data));
-
     axiosSecure.get("/products").then((res) => setProducts(res.data));
   }, []);
   return (
